@@ -1,0 +1,105 @@
+
+:root{
+    --text-color:#d9d9da;
+}
+.container{
+    background: url(../img/tema_escuro.png) no-repeat;
+    background-size:100vw 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height:100vh ;
+    perspective: 200px;
+}
+.card{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: var(--text-color);
+    width: 300px;
+    height: auto;
+    border: 5px inset #796f62;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: all .5s ease;
+}
+/* .card:hover{
+    cursor: pointer;
+    transform: scale(1.1) ;
+    transition: all .5s ease;
+} */
+.card img{
+
+    border-radius: 100px ;
+    height:100px;
+    width: 100px;    
+}
+.card .dados-pessoais{
+    text-align: center;
+}
+.card .dados-pessoais h1{
+font-size: 25px;
+font-weight: 800;
+}
+.card .dados-pessoais h2{
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    }    
+.card .dados-pessoais .localizacao{
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 15px;
+ 
+    }    
+.card .dados-pessoais .localizacao i{
+    padding-right: 10px;
+    }    
+.card .dados-pessoais p{
+    font-size: 2.4rem;
+    line-height: .8;
+    font-family: 'Tangerine', cursive;
+    font-weight: 700;
+    margin-bottom: 5px;
+    }    
+
+.redes-sociais{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #d9d9da ;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+.redes-sociais a{
+    color:var(--text-color) ;
+    font-size: 25px;
+}
+.redes-sociais a:hover{
+    color:var(--text-color);
+    cursor: pointer;
+    transform: scale(1.2) ;
+    transition: all .4s ease;
+}
+.card .botoes{
+    display: flex;
+   gap: 12px;
+}
+.card .botoes button{
+    font-size: 17px;
+    font-weight: 600;
+    border: 3px inset #796f62;
+    border-radius: 30px;
+    padding: 10px 15px;
+    /* margin-right: 14px; */
+   
+}
+.card .botoes button:hover{
+    cursor: pointer;
+    transform: scale(1.2) ;
+    transition: all .4s ease;
+}
+
+   
