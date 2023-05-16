@@ -10,7 +10,7 @@ botao.addEventListener('click', () => {
                 console.log("Teste" + i);
                 irAoPortfolio.style.translate = `0px 0px ${i}px`
                 if (i == 100) {
-                  window.location.href = "https://sdnjsouza.github.io/portflolio/portfolio.html"
+                  window.location.href = "https://sdnjsouza.github.io/portfolio/portfolio.html"
                 }
             }, 8 * i);
         })(i);
