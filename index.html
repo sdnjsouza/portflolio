@@ -6,69 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
-    <link rel="shortcut icon" href="src/img/favicon/book/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="src/img/favicon/book-favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/index.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
- 
+
 </head>
 
 <body>
     <section class="container">
         <div href="#" class="card" id="click">
-            <img src="src/img/foto1.png" alt="Foto">
+            <img src="src/img/foto1.png" alt="Foto" class="foto">
             <div class="dados-pessoais">
                 <h1>Sydney Souza</h1>
                 <h2>Desenvolvedor Front-End Jr</h2>
-                <p class="localizacao"><i class='bx bx-map' ></i><span>São Cristóvão, Sergipe</span></p>
-                <p>Sorte é o que acontece quando a preparação se encontra com a oportunidade.</p>
+                <p class="tecnologias"> Tecnologias:
+                 
+                    <i class='bx bxl-html5' title="HTML5"></i>
+                    <i class='bx bxl-css3' title="CSS3"></i>
+                    <i class='bx bxl-javascript' title="JavaScript"></i>
+                    <i class='bx bxl-react' title="React"></i>
+                    <i class='bx bxl-github' title="GitHub"></i>
+                    <img src="src/img/jest-icon.png" style="filter: invert(100%);" title="Jest">
+                </p>
+                <p class="texto">Sorte é o que acontece quando a preparação se encontra com a oportunidade.</p>
 
-                <!-- <div class="projetos-feitos">
-                    <h4>4</h4>
-                    <h5>Projetos</h5>
-                </div> -->
             </div>
 
             <div class="redes-sociais">
                 <a href="https://github.com/sdnjsouza" title="GitHub" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="mailto:souzasydney@gmail.com" title="Email" target="_blank"><i class='bx bxs-envelope' ></i></a>
-                <a href="https://www.linkedin.com/in/sydney-souza-47b003165/" title="Linkedin" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-                <a href="https://wa.me/5579991163308" title="Whatsapp" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+                <a href="mailto:souzasydney@gmail.com" title="Email" target="_blank"><i class='bx bxs-envelope'></i></a>
+                <a href="https://www.linkedin.com/in/sydney-souza-47b003165/" title="Linkedin" target="_blank"><i
+                        class='bx bxl-linkedin-square'></i></a>
+                <a href="https://wa.me/5579991163308" title="Whatsapp" target="_blank"><i
+                        class='bx bxl-whatsapp'></i></a>
             </div>
             <div class="botoes">
-                <button class="curriculo"> Currículo</button>
+                <a href="https://docs.google.com/document/d/1oQ-fwkVu2hnIgtbcvyfNp3YI7HCpPheiN69mLoSgMKA/edit?usp=share_link"
+                    target="_blank">
+                    <button class="curriculo" id="curriculo">Currículo
+                    </button>
+                </a>
                 <button id="portfolio">Portfólio</button>
             </div>
         </div>
-
     </section>
-    <script>
-        //object.style.translate="10px 20px" 
-        let irAoPortfolio = document.getElementById("click")
-        let botao = document.getElementById("portfolio")
-        let soma = 0
-        botao.addEventListener('click', () => {
 
 
-            console.log("Iniciando Teste");
-            for (i = 0; i < 201; i++) {
-                (function (i) {
-                    setTimeout(function () {
-                        console.log("Teste" + i);
-                        irAoPortfolio.style.translate = `0px 0px ${i}px`
-                        if (i == 200) {
-                            window.location.href = "http://127.0.0.1:5500/portfolio.html"
-                        }
-                    }, 8 * i);
-                })(i);
-
-            };
-
-
-        })
-        console.log(soma);
-    </script>
+    <script src="src/js/script_index.js"> </script>
 </body>
 
 </html>
