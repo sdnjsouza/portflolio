@@ -9,7 +9,7 @@
     align-items:center;
     justify-content: center;
     height:100vh ;
-    perspective: 200px;
+    perspective: 100px;
 }
 .card{
     display: flex;
@@ -25,12 +25,8 @@
     padding: 10px 20px;
     transition: all .5s ease;
 }
-/* .card:hover{
-    cursor: pointer;
-    transform: scale(1.1) ;
-    transition: all .5s ease;
-} */
-.card img{
+
+.card .foto{
 
     border-radius: 100px ;
     height:100px;
@@ -48,22 +44,26 @@ font-weight: 800;
     font-weight: 500;
     margin-bottom: 15px;
     }    
-.card .dados-pessoais .localizacao{
-    font-size: 12px;
+.card .dados-pessoais .tecnologias{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 16px;
     font-weight: 800;
     margin-bottom: 15px;
+}    
+.card .dados-pessoais .tecnologias i{
+    font-size: 28px;
+}    
  
-    }    
-.card .dados-pessoais .localizacao i{
-    padding-right: 10px;
-    }    
-.card .dados-pessoais p{
+.card .dados-pessoais .texto{
     font-size: 2.4rem;
     line-height: .8;
     font-family: 'Tangerine', cursive;
     font-weight: 700;
     margin-bottom: 5px;
-    }    
+}    
 
 .redes-sociais{
     display: flex;
@@ -85,7 +85,7 @@ font-weight: 800;
 }
 .card .botoes{
     display: flex;
-   gap: 12px;
+    gap: 12px;
 }
 .card .botoes button{
     font-size: 17px;
@@ -93,7 +93,6 @@ font-weight: 800;
     border: 3px inset #796f62;
     border-radius: 30px;
     padding: 10px 15px;
-    /* margin-right: 14px; */
    
 }
 .card .botoes button:hover{
